@@ -2392,3 +2392,540 @@ Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-27 23:15:2
   
 ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
   
+Started GET "/products" for 127.0.0.1 at 2022-09-28 22:20:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 86.6ms | Allocations: 6330)
+  Rendered layout layouts/application.html.erb (Duration: 422.1ms | Allocations: 42860)
+Completed 200 OK in 467ms (Views: 430.3ms | ActiveRecord: 2.2ms | Allocations: 47178)
+
+
+Started GET "/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:20:22 -0500
+Started GET "/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:20:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:20:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery/jquery.min.js"):
+  
+Started GET "/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:20:22 -0500
+Started GET "/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:20:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/js/sb-admin-2.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-easing/jquery.easing.min.js"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/carlos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:20:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:20:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:20:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/js/sb-admin-2.min.js"):
+  
+Started GET "/products" for 127.0.0.1 at 2022-09-28 22:30:22 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1231)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 4327)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 1.0ms | Allocations: 5211)
+
+
+Started GET "/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:30:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:30:22 -0500
+Started GET "/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:30:22 -0500
+Started GET "/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:30:22 -0500
+Started GET "/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:30:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-easing/jquery.easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/sb-admin-2.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery/jquery.min.js"):
+  
+Started GET "/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:30:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:30:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:30:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/js/sb-admin-2.min.js"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2022-09-28 22:30:27 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:63:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/_product.html.erb (Duration: 3.7ms | Allocations: 258)
+  Rendered products/show.html.erb within layouts/application (Duration: 54.7ms | Allocations: 7579)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 7660)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.7ms | Allocations: 16755)
+
+
+  
+ActionView::Template::Error (undefined method `create_at' for #<Product id: 1, name: "Mesa", reference: "M1", description: "Esto es una mesa", created_at: "2022-09-27 17:55:46.000598000 +0000", updated_at: "2022-09-27 17:55:46.000598000 +0000">
+Did you mean?  created_at
+               created_at?
+               created_at=):
+    36:         </tr>
+    37:         <tr>
+    38:           <td><b>Fecha de Creación:</b></td>
+    39:           <td><%= @product.create_at %></td>
+    40:         </tr>
+    41:       </table>
+    42:     </div>
+  
+app/views/products/show.html.erb:39
+Started GET "/products/1" for 127.0.0.1 at 2022-09-28 22:30:54 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:63:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/_product.html.erb (Duration: 1.2ms | Allocations: 200)
+  Rendered products/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1540)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 4391)
+Completed 200 OK in 35ms (Views: 29.3ms | ActiveRecord: 0.3ms | Allocations: 5801)
+
+
+Started GET "/products/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:30:54 -0500
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:30:54 -0500
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:30:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:30:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:30:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery/jquery.min.js"):
+  
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:30:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:30:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:30:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2022-09-28 22:31:21 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:63:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3618)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 0.3ms | Allocations: 5014)
+
+
+Started GET "/products/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:31:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/products/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:31:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery/jquery.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:31:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:31:21 -0500
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:31:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:31:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:31:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovements (20220929033417)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "movements" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer NOT NULL, "movement_type" integer, "quantity" integer, "comment" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_224fd3a1ee"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_movements_on_product_id" ON "movements" ("product_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220929033417"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/products/1" for 127.0.0.1 at 2022-09-28 22:34:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:63:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 307)
+  Rendered layout layouts/application.html.erb (Duration: 79.5ms | Allocations: 14489)
+Completed 200 OK in 115ms (Views: 83.9ms | ActiveRecord: 2.4ms | Allocations: 18965)
+
+
+Started GET "/products/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:34:52 -0500
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:34:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/products/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:34:52 -0500
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:34:52 -0500
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:34:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:34:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:34:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:34:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2022-09-28 22:41:11 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 15228)
+Completed 200 OK in 116ms (Views: 76.3ms | ActiveRecord: 1.4ms | Allocations: 19791)
+
+
+Started GET "/products/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:41:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/products/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:41:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery/jquery.min.js"):
+  
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:41:12 -0500
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:41:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:41:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2022-09-28 22:41:24 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 9.0ms | Allocations: 637)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 3698)
+Completed 200 OK in 35ms (Views: 28.0ms | ActiveRecord: 0.3ms | Allocations: 5093)
+
+
+Started GET "/products/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:41:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/products/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:41:24 -0500
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:41:24 -0500
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:41:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:41:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:41:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2022-09-28 22:45:43 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 667)
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | Allocations: 15163)
+Completed 200 OK in 89ms (Views: 62.4ms | ActiveRecord: 4.6ms | Allocations: 20122)
+
+
+Started GET "/products/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:45:43 -0500
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:45:43 -0500
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:45:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:45:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery/jquery.min.js"):
+  
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:45:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:45:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+Started GET "/products/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:45:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:45:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/sb-admin-2.min.js"):
+  
+Started GET "/products/1/new_movement" for 127.0.0.1 at 2022-09-28 22:45:47 -0500
+Processing by ProductsController#new_movement as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:61:in `new_movement'
+  Rendering layout layouts/application.html.erb
+  Rendering products/new_movement.html.erb within layouts/application
+  Rendered products/new_movement.html.erb within layouts/application (Duration: 4.5ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 2666)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 3526)
+
+
+Started GET "/products/1/vendor/fontawesome-free/css/all.min.css" for 127.0.0.1 at 2022-09-28 22:45:47 -0500
+Started GET "/products/1/vendor/bootstrap/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-09-28 22:45:47 -0500
+Started GET "/products/1/vendor/jquery/jquery.min.js" for 127.0.0.1 at 2022-09-28 22:45:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/vendor/jquery/jquery.min.js"):
+  
+Started GET "/products/1/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:45:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/1/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:45:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/vendor/bootstrap/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/js/sb-admin-2.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/vendor/fontawesome-free/css/all.min.css"):
+  
+Started GET "/products/1/vendor/jquery-easing/jquery.easing.min.js" for 127.0.0.1 at 2022-09-28 22:45:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/vendor/jquery-easing/jquery.easing.min.js"):
+  
+Started GET "/products/1/js/sb-admin-2.min.js" for 127.0.0.1 at 2022-09-28 22:45:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/js/sb-admin-2.min.js"):
+  
