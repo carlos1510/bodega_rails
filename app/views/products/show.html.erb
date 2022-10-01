@@ -5,6 +5,7 @@
     <%= link_to "Editar este producto", edit_product_path(@product), class: 'btn btn-info' %>
     <%= link_to "Eliminar este producto", @product, class: 'btn btn-danger' %>
     <%= link_to "Crear Movimiento", new_movement_product_path, class: 'btn btn-success' %>
+    <%= link_to "Exportar a Excel", product_path(@product, format: :xlsx), class: 'btn btn-success' %>
 
     <div class="card">
       <table class="table">
@@ -22,12 +23,38 @@
         </tr>
         <tr>
           <td><b>Cantidad actual:</b></td>
-          <td><%=0 %></td>
+          <td><%= @product.quantity %></td>
         </tr>
         <tr>
           <td><b>Fecha de Creación:</b></td>
           <td><%= @product.created_at %></td>
         </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 20px">
+  <div class="col-lg-12">
+    <div class="card" style="padding-top: 20px">
+      <h1>Movimientos</h1>
+      <table class="table">
+        <thead>
+        <th>Tipo</th>
+        <th>Cantidad</th>
+        <th>Comentario</th>
+        <th>Fecha/Hora</th>
+        </thead>
+        <tbody>
+          <% @product.movements.each do |movement| %>
+            <tr>
+              <td><%= movement.movement_type_name %></td>
+              <td><%= movement.quantity %></td>
+              <td><%= movement.comment %></td>
+              <td><%= movement.created_at %></td>
+            </tr>
+          <% end %>
+        </tbody>
       </table>
     </div>
   </div>

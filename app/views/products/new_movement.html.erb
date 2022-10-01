@@ -23,6 +23,7 @@
 
         <% if @movement.errors.any? %>
           <div class="alert alert-danger">
+            <h3><%= flash[:notice] %></h3>
             <ul>
               <% @movement.errors.full_messages.each do |message| %>
                 <li><%= message %></li>

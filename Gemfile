@@ -70,3 +70,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'rubyzip', '>= 1.2.1'
+gem 'axlsx'
+gem 'axlsx_rails'
